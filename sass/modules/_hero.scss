@@ -37,9 +37,9 @@
 		}
 
 		a {
-				@extend %button;
-				margin-bottom: 1em;
-			}
+			@extend %button;
+			margin-bottom: 1em;
+		}
 
 		@include media($medium-screen){
 			@include span-columns(8);
