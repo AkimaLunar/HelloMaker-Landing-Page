@@ -325,8 +325,8 @@ html {
   background-color: #7F99BE; }
   @media screen and (min-width: 40em) {
     .hero {
-      background: url("assets/background4.png"), -webkit-linear-gradient(10deg, #7F99BE, #84BBD5), no-repeat #7F99BE scroll;
-      background: url("assets/background4.png"), linear-gradient(10deg, #7F99BE, #84BBD5), no-repeat #7F99BE scroll;
+      background: url("assets/background.png"), -webkit-linear-gradient(10deg, #7F99BE, #84BBD5), no-repeat #7F99BE scroll;
+      background: url("assets/background.png"), linear-gradient(10deg, #7F99BE, #84BBD5), no-repeat #7F99BE scroll;
       background-size: cover; } }
   .hero .hero-inner {
     padding: 0 1em;
