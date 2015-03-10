@@ -1,0 +1,57 @@
+.hero {  
+	$hero-background-image: "assets/background4.png";
+	$hero-background-top: #7F99BE; 
+	$hero-background-bottom: #84BBD5;
+	$hero-background-angle: 10deg;
+
+	min-height: 100%;
+	min-width: 100%;
+	background-color: $hero-background-top;
+	
+	@include media($medium-screen){
+		@include background(url($hero-background-image), linear-gradient($hero-background-angle, $hero-background-top, $hero-background-bottom), no-repeat $hero-background-top scroll);
+		background-size: cover;
+	}
+
+	.hero-inner {
+		padding: 0 em(16);
+		@include outer-container;
+
+	}
+
+	.hero-copy {
+		@include span-columns(12);
+		margin-top: em(100);
+		color: $white;
+		text-align: center;
+		h1 {
+			font-size: 2.2em;
+			font-weight: $font-weight-bold;
+			line-height: 1;
+			margin-bottom: 1em;
+		}
+		p {
+			font-weight: $font-weight-bold;
+			font-size: 1em;
+			margin-bottom: 1em;
+		}
+
+		a {
+				@extend %button;
+				margin-bottom: 1em;
+			}
+
+		@include media($medium-screen){
+			@include span-columns(8);
+			@include shift(2);
+			margin-top: em(180);
+				h1 {
+					font-size: 4em;
+				}
+				p {
+					font-size: 1.2em;
+				}
+		}
+		
+	}
+}

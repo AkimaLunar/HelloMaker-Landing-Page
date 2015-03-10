@@ -1,0 +1,43 @@
+.features {
+	$features-accent-color: darken($blue, .6);
+	ul {
+		@include outer-container;
+		padding: em(16);
+	}
+
+	li {
+		@include span-columns(12);
+		padding: em(20) em(10);
+		span {
+			display: block;
+			margin: 0 auto;
+			font-size: 4em;
+			color: $features-accent-color;
+			text-align: center;
+		}
+
+		h3 {
+			text-align: center;
+			color: $features-accent-color;
+			text-transform: capitalize;
+		}
+
+		hr {
+			display: block;
+			width: 50%;
+			margin: 1em auto;
+			height: 10px;
+			border: none;
+			background: $features-accent-color;
+
+		}
+		@include media($medium-screen) {
+			@include span-columns(4);
+			padding: em(40) em(10);
+
+			h3 {
+				font-size: 2.4em;
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+.sign-up-form {
+	height: 430px;
+	padding: em(20) 0;
+	@include background(linear-gradient($blue, $purple) top no-repeat);
+
+	.sign-up-form-inner {
+		padding: em(20);
+		width: 90%;
+		margin: 0 auto;
+		border-radius: 4px;
+		background: white;
+
+		@include media ($medium-screen) {
+			width: 600px;
+		}
+	}
+
+	@include media ($medium-screen) {
+		height: 500px;
+		padding: em(60) 0;
+	}
+
+	legend {
+		@extend h3;
+		font-weight: $font-weight-bold;
+		color: $purple;
+		margin-bottom: 1em;
+	}
+
+
+}
