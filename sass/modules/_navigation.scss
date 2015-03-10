@@ -6,7 +6,11 @@
 	@include background(linear-gradient($blue, $purple) top no-repeat);
 	@include media($medium-screen) {
 		position: fixed;
-		background: transparentize($blue, .4);
+		background: transparentize($blue, .1);
+		@include transition(all .2s ease-in-out);
+		&:hover {
+			background: $blue;	
+		}
 	}
 
 	img {

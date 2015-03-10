@@ -255,7 +255,12 @@ html {
   @media screen and (min-width: 40em) {
     .navigation {
       position: fixed;
-      background: rgba(132, 187, 213, 0.6); } }
+      background: rgba(132, 187, 213, 0.9);
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .navigation:hover {
+        background: #84BBD5; } }
   .navigation img {
     height: 1em;
     width: auto;
